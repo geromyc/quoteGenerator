@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <title>Random Quote Generator</title>
+    </head>
+    
+    <body>
+        <div class="container-fluid text-center">
+            <h1>Random Quote Generator</h1>
+            <p>Classic Simpson's quotes at the click of a button!</p>
+            <br/>
+            <div class="jumbotron-fluid">
+                <div class="quotes">
+                    <p id="quoteDisp" class="quote"></p><br/>
+                    <p id="authorDisp" class="author"></p>
+                </div>
+            </div>
+            <button id="getQuote" class="btn" onclick="getQuote()">Get a Quote!</button>
+            <button id="postTwitter" class="btn" onclick="postTwitter()"><i class="fa fa-twitter" aria-hidden="true"></i></button>
+            <!--<button id="postReddit" class="btn" onclick="postReddit"><i class="fa fa-reddit-alien" aria-hidden="true"></i></button>-->
+        </div>
+        
+    <script src="https://use.fontawesome.com/8ed53a809a.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    </body>
+</html>
