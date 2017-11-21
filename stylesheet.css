@@ -13,26 +13,26 @@ p {
     font-style: italic;
 }
 .jumbotron-fluid {
-    background: url(https://ak3.picdn.net/shutterstock/videos/30397273/thumb/1.jpg) no-repeat center center fixed;
+    background: url(https://i.ytimg.com/vi/OKPZ5eAWBn0/maxresdefault.jpg) no-repeat center center fixed;
     background-size: cover;
-    height:33vh;
+    height:50vh;
     margin-bottom: 20px;
 }
 .quotes {
-    width: 33%;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
-    border-color: white;
-    border-style: solid;
     border-radius: 5px;
     padding: 20px;
     height: auto;
-    color: white;
+    color: black;
 }
 .quote {
     font-size: 20px;
+    color: black;
 }
 .author {
     font-size: 15px;
     font-style: italic;
+    color: black;
 }
