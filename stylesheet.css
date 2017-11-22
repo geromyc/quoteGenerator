@@ -13,7 +13,7 @@ p {
     font-style: italic;
 }
 .jumbotron-fluid {
-    background: url(https://i.ytimg.com/vi/OKPZ5eAWBn0/maxresdefault.jpg) no-repeat center center fixed;
+    background: url("") no-repeat center center fixed;
     background-size: cover;
     height:50vh;
     margin-bottom: 20px;
