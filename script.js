@@ -3,8 +3,8 @@
 var quotes = {
     quote: "",
     title: "",
-    quote2: "",
-    title2: "",
+    // quote2: "",
+    // title2: "",
     generQuote: function() {
       $.getJSON("https://thesimpsonsquoteapi.glitch.me/quotes", function(quoteData) {
         console.log(quoteData);
@@ -17,14 +17,14 @@ var quotes = {
     chgQuote: function() {
       $.getJSON("https://talaikis.com/api/quotes/random/", function(quoteData2) {
         console.log(quoteData2);
-        quotes.quote2 = quoteData2.quote;
-        quotes.title2 = quoteData2.author;
-        document.getElementById("quoteDisp").innerHTML = ('"' + quotes.quote2 + '"');
-        document.getElementById("authorDisp").innerHTML = '- ' + quotes.title2;
+        quotes.quote = quoteData2.quote;
+        quotes.title = quoteData2.author;
+        document.getElementById("quoteDisp").innerHTML = ('"' + quotes.quote + '"');
+        document.getElementById("authorDisp").innerHTML = '- ' + quotes.title;
       });
     },
     postTwitter: function() {
-        window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent('"' + quotes.quote + '"' + '  - ' + quotes.title));
+        window.open('https://twitter.com/intent/tweet?text=' + '"' + quotes.quote + '"' + '  - ' + quotes.title);
     },
     postReddit: function() {
         window.open('https://www.reddit.com/r/quotes/submit?amp;title=' + "Quote by: " + quotes.title + "&text=" + quotes.quote);

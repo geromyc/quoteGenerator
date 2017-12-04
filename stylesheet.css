@@ -1,6 +1,6 @@
 body {
     background-color: black;
-    font-family: "Ariel";
+    font-family: Helvetica, Arial;
 }
 h1 {
     color: white;
@@ -8,7 +8,7 @@ h1 {
 }
 p {
     color: white;
-    font-family: "Times New Roman";
+    font-family: Helvetica, Arial;
     font-size: 25px;
     font-style: italic;
 }
