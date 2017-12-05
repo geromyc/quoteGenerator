@@ -1,6 +1,6 @@
 /*global $ */
 
-var quotes = {
+var qGen = {
     quote: "",
     title: "",
     // quote2: "",
@@ -8,26 +8,26 @@ var quotes = {
     generQuote: function() {
       $.getJSON("https://thesimpsonsquoteapi.glitch.me/quotes", function(quoteData) {
         console.log(quoteData);
-        quotes.quote = quoteData[0].quote;
-        quotes.title = quoteData[0].character;
-        document.getElementById("quoteDisp").innerHTML = ('"' + quotes.quote + '"');
-        document.getElementById("authorDisp").innerHTML = '- ' + quotes.title;
-        });
+        qGen.quote = quoteData[0].quote;
+        qGen.title = quoteData[0].character;
+        document.getElementById("quoteDisp").innerHTML = ('"' + qGen.quote + '"');
+        document.getElementById("authorDisp").innerHTML = '- ' + qGen.title;
+      });
     },
     chgQuote: function() {
       $.getJSON("https://talaikis.com/api/quotes/random/", function(quoteData2) {
         console.log(quoteData2);
-        quotes.quote = quoteData2.quote;
-        quotes.title = quoteData2.author;
-        document.getElementById("quoteDisp").innerHTML = ('"' + quotes.quote + '"');
-        document.getElementById("authorDisp").innerHTML = '- ' + quotes.title;
+        qGen.quote = quoteData2.quote;
+        qGen.title = quoteData2.author;
+        document.getElementById("quoteDisp").innerHTML = ('"' + qGen.quote + '"');
+        document.getElementById("authorDisp").innerHTML = '- ' + qGen.title;
       });
     },
     postTwitter: function() {
-        window.open('https://twitter.com/intent/tweet?text=' + '"' + quotes.quote + '"' + '  - ' + quotes.title);
+        window.open('https://twitter.com/intent/tweet?text=' + '"' + qGen.quote + '"' + '  - ' + qGen.title);
     },
     postReddit: function() {
-        window.open('https://www.reddit.com/r/quotes/submit?amp;title=' + "Quote by: " + quotes.title + "&text=" + quotes.quote);
+        window.open('https://www.reddit.com/r/quotes/submit?amp;title=' + "Quote by: " + qGen.title + "&text=" + qGen.quote);
     },
     colorChange: function() {
       var r = Math.floor(Math.random() * 256);
@@ -52,18 +52,18 @@ var quotes = {
 };
 
 document.getElementById("newQuote").onclick = function() {
-  quotes.generQuote();
-  quotes.colorChange();
+  qGen.generQuote();
+  qGen.colorChange();
 }
 document.getElementById("changeQuote").onclick = function() {
-  quotes.chgQuote();
-  quotes.colorChange2();
+  qGen.chgQuote();
+  qGen.colorChange2();
 }
 document.getElementById("postTwit").onclick = function() {
-  quotes.postTwitter();
+  qGen.postTwitter();
 }
 document.getElementById("postRed").onclick = function() {
-  quotes.postReddit();
+  qGen.postReddit();
 }
 
 
